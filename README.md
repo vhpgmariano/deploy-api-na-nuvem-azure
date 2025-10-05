@@ -3,15 +3,15 @@
 
 -----
 
-# 📄 README.md: Guia Prático de Deploy de uma API na Nuvem (Azure)
+# README.md: Guia Prático de Deploy de uma API na Nuvem (Azure)
 
-## 🚀 Objetivo do Projeto
+## Objetivo do Projeto
 
 Este projeto tem como objetivo principal ser um guia prático e detalhado sobre como realizar o **deploy de uma API REST** na nuvem, utilizando a plataforma **Microsoft Azure**. O foco é na implementação do **Azure App Service** para hospedagem e na configuração de práticas recomendadas, como o uso de **Identidades Gerenciadas** e **Azure Key Vault** para segurança de credenciais.
 
 A arquitetura final resultará em uma solução robusta, escalável e com baixo atrito na gestão de segredos.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria | Serviço / Tecnologia | Função |
 | :--- | :--- | :--- |
@@ -22,7 +22,7 @@ A arquitetura final resultará em uma solução robusta, escalável e com baixo 
 
 -----
 
-## 🏗️ Arquitetura de Deploy
+## Arquitetura de Deploy
 
 O processo de *deploy* segue uma arquitetura baseada em três pilares, focando em segurança e *serverless*:
 
@@ -30,7 +30,7 @@ O processo de *deploy* segue uma arquitetura baseada em três pilares, focando e
 2.  **Identidade (Azure Entra ID):** Atribuída ao App Service para que ele possa se autenticar nos outros recursos.
 3.  **Segurança (Key Vault e SQL DB):** O App Service usa sua Identidade Gerenciada para obter a **string de conexão** do banco de dados a partir do Key Vault. O SQL Database usa a mesma Identidade Gerenciada para permitir o acesso.
 
-## 📋 Roteiro de Deploy Detalhado
+## Roteiro de Deploy Detalhado
 
 Este guia assume que você já possui o código de uma API funcional (ex: usando um *backend* de banco de dados).
 
@@ -88,7 +88,7 @@ Este é o passo crucial para eliminar senhas do seu código.
 
   * No Visual Studio, VS Code ou via pipeline de CI/CD (GitHub Actions / Azure DevOps), publique o código da API no **Azure App Service** configurado.
 
-## ✅ Teste e Validação
+## Teste e Validação
 
 Após o *deploy*, a API tentará:
 
